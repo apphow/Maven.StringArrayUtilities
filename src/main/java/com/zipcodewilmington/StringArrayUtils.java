@@ -34,14 +34,15 @@ public class StringArrayUtils {
     return arr;
 
 }
-
-
     /**
      * @param array array of String objects
      * @return second to last element in specified array
      */ // TODO
     public static String getSecondToLastElement(String[] array) {
-        return array[-2];
+        
+        String arr = array[array.length -2];
+        
+        return arr;
     }
 
     /**
