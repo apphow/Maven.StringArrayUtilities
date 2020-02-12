@@ -9,6 +9,7 @@ public class StringArrayUtils {
      * @return first element of specified array
      */ // TODO
     public static String getFirstElement(String[] array) {
+
         return array[0];
     }
 
@@ -25,15 +26,22 @@ public class StringArrayUtils {
      * @return last element in specified array
      */ // TODO
     public static String getLastElement(String[] array) {
-        return null;
-    }
+
+        //String [] lastElement = array.length() -1);
+        //return array[array.getsize()-1];
+        String arr = array[array.length - 1];
+    
+    return arr;
+
+}
+
 
     /**
      * @param array array of String objects
      * @return second to last element in specified array
      */ // TODO
     public static String getSecondToLastElement(String[] array) {
-        return null;
+        return array[-2];
     }
 
     /**
