@@ -1,6 +1,8 @@
 package com.zipcodewilmington;
 
-import java.io.Serializable;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by leon on 1/29/18.
@@ -68,29 +70,41 @@ public class StringArrayUtils {
      * @return an array with identical contents in reverse order
      */ // TODO
     public static String[] reverse(String[] array) {
-        for (int i = array.length - 1; i >= 0; i--) {
 
-
+        //Convert string array to List of Strings
+        List<String> input = Arrays.asList(array);
+        //Reverse the collections of strings using Collections Parent Class of List
+        Collections.reverse(input);
+        //convert list back to array and return
+        return input.toArray(array);
     }
-        return array;
 
-}
+    // convert String to character array
+    // by using toCharArray
 
-            /**
+    // convert String to character array
+    // by using toCharArray
+
+
+    // Creating array of string length
+
+    // Copy character by character into array
+
+
+
+
+    /**
              * @param array array of String objects
              * @return
              */ // TODO
-            public static boolean isPalindromic (String[]array){
-                    for (int i = 0; i < array.length / 2; i++) {
-                        if (!array[i].equals(array[array.length - 1 - i])) {
+            public static boolean isPalindromic (String[]array) {
+                String result = "";
+                return result.toLowerCase()
+                        .replaceAll("[^a-z]", "")
+                        .replaceAll("(.)(?=.*\\1)", "")
+                        .length() == 26;
 
 
-                        }
-
-                        return true;
-                    }
-
-                return false;
             }
 
 
@@ -108,6 +122,10 @@ public class StringArrayUtils {
              * @return number of occurrences the specified `value` has occurred
              */ // TODO
             public static int getNumberOfOccurrences (String[]array, String value){
+                int count = 0;
+                //for (int i = 0; i <= array.length() -2; i++){
+                   // if(array.equals(value);
+               // }
                 return 0;
             }
 
@@ -118,14 +136,25 @@ public class StringArrayUtils {
              */ // TODO
             public static String[] removeValue (String[]array, String valueToRemove){
                 return null;
+                //return String array = {array, removeValue()};;
             }
 
             /**
              * @param array array of chars
              * @return array of Strings with consecutive duplicates removes
              */ // TODO
-            public static String[] removeConsecutiveDuplicates (String[]array){
-                return null;
+            public static String removeConsecutiveDuplicates (String[]array){
+
+                int count = 0;
+                String newS = "";
+                for (int i = 1; i < array.length; i++) {
+                    // check if the current value differs from the preceding one
+                    if (array[i] != array[i - 1]) {
+                        count++;
+                        array[Integer.parseInt(newS)] = array[i];
+                    }
+                }
+                return array[1];
             }
 
             /**
