@@ -121,7 +121,17 @@ public class StringArrayUtils {
      * @param array array of String objects
      * @return true if each letter in the alphabet has been used in the array
      */ // TODO
-    public static boolean isPangramic (String[]array){
+    public static boolean isPangramic (String[]array) {
+
+        //char[] alphabet = new char[26];
+        //for (String str : array) {
+           // char[] chars = str.toCharArray();
+       // }
+      //  return false;
+
+
+
+   // }
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         boolean isThere = true;
         boolean notThere = false;
@@ -252,20 +262,14 @@ public class StringArrayUtils {
     }
 
     public static String removeConsecutiveDuplicates(String array) {
-                    // Write your code here
+
+        // Write your code here
+
+        //String temp = "array";
 
 
 
-
-
-
-
-
-
-
-
-
-        return  null;
+        return  array;
     }
 
 }
